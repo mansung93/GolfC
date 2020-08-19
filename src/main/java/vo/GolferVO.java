@@ -1,4 +1,4 @@
-package com.ncs.vo;
+package vo;
 
 // VO(Value Object), DTO(Data Transfer Object)
 
@@ -7,6 +7,7 @@ public class GolferVO {
 	private String id;
 	private String password;
 	private String name;
+	private String nickname;
 	private int age;
 	private double hcp;
 	private String gender;
@@ -22,7 +23,9 @@ public class GolferVO {
 	public String getPassword() {return password;}
 	public void setPassword(String password) {this.password = password;}
 	public String getName() {return name;}
-	public void setName(String name) {this.name = name;}
+	public void setName(String nickname) {this.nickname = nickname;}
+	public String getNickname() {return nickname;}
+	public void setNickname(String nickname) {this.nickname = nickname;}
 	public int getAge() {return age;}
 	public void setAge(int age) {this.age = age;}
 	public double getHcp() {return hcp;}
@@ -44,7 +47,7 @@ public class GolferVO {
 	
 	@Override
 	public String toString() {
-		return "GolferVO [id=" + id + ", password=" + password + ", name=" + name + ", age=" + age + ", hcp=" + hcp
+		return "GolferVO [id=" + id + ", password=" + password + ", name=" + name + ", nickname=" + nickname + ", age=" + age + ", hcp=" + hcp
 				+ ", gender=" + gender + ", homeclub=" + homeclub + ", birthday=" + birthday + ", phone=" + phone
 				+ ", adress=" + adress + ", lev=" + lev + ", point=" + point + "]";
 	}
