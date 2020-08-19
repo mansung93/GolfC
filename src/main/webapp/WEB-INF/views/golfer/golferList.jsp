@@ -15,7 +15,7 @@
 	<td>hcp</td><td>gender</td><td>homeclub</td><td>birthday</td>
 	<td>phone</td><td>adress</td><td>lev</td><td>point</td>
 </tr>
-<c:forEach var="list" items="${ping}">
+<c:forEach var="list" items="${Ping}">
 <tr align="center" height=30>
 	<td>${list.id}</td>
 	<td>${list.name}</td>
@@ -27,13 +27,13 @@
 	<td>${list.birthday}</td>
 	<td>${list.phone}</td>
 	<td>${list.adress}</td>
-	<td>${list.level}</td>
+	<td>${list.lev}</td>
 	<td>${list.point}</td>
 </tr>
 </c:forEach>
 </table>
 <hr>
 <c:if test="${message != null}">${message}</c:if>
-<a href="home">[Home]</a>
+<a href="/golfc">[Home]</a>
 </body>
 </html>
