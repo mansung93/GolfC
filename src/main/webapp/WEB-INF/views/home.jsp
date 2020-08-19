@@ -8,5 +8,6 @@
 <h1>** GolfC **</h1>
 
 <a href="golferList">GolferList</a>
+<a href="boardList">BoardList</a>
 </body>
 </html>
